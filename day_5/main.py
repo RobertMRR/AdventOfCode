@@ -63,7 +63,6 @@ def fix_order(update, page_orders):
 def day5_1(input_file):
     page_orders, updates = get_data(input_file)
     correct = check_updates(page_orders, updates)
-    print(correct)
     result = 0
     for item in correct:
         x = int(len(item)/2)
@@ -81,5 +80,5 @@ def day5_2(input_file):
         x = int(len(item)/2)
         result += int(item[x])
     print(result)
-#day5_1(input_file)
+day5_1(input_file)
 day5_2(input_file)
