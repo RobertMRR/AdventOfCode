@@ -3,7 +3,7 @@ location_file = "locationIDs.txt"
 left_side = []
 right_side = []
 counter = 0
-with open(location_file,"r") as f:
+with open(location_file,"w") as f:
     for line in f:
         left_side.append(int(line[:5]))
         right_side.append(int(line[8:13]))
